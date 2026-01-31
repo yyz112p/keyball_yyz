@@ -23,35 +23,35 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_universal(
-             ,          ,          ,          ,          ,          ,                                           ,          ,          ,          ,          ,          ,
+    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                  KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,
     KC_LALT  , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_MINS  ,
     KC_LSFT  , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                  KC_H     , KC_J     , KC_K     , KC_L     , MO(3)    , MO(2)    ,
-    MO(1)    , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,       ,                        , KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , MO(4)    ,
-    _______  , KC_LCTL  , KC_LWIN  , MO(4)    , MO(1)    , KC_SPC   , KC_DEL,                 KC_BSPC, KC_ENT   ,LT(1,KC_LNG2),KC_RGUI, _______  , KC_INT1  , 
+    MO(1)    , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_NO ,                  KC_NO , KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , MO(4)    ,
+    _______  , KC_LCTL  , KC_LWIN  , MO(4)    , MO(1)    , KC_SPC   , KC_DEL,                 KC_BSPC, KC_ENT   ,LT(1,KC_LNG2),KC_RGUI, _______  , KC_INT1  , KC_NO    
   ),
 //Fn1
   [1] = LAYOUT_universal(
-             ,          ,          ,          ,          ,          ,                                           ,          ,          ,          ,          ,          ,
+     KC_NO , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                   KC_NO   , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,
     _______, KC_ESC   , S(KC_TAB), KC_UP    , KC_TAB   ,          ,                                  S(KC_4)  , S(KC_7)  , S(KC_2)  , S(KC_6)  , KC_LBRC  , KC_EQL   ,
     _______, KC_HOME  , KC_LEFT  , KC_DOWN  , KC_RGHT  , KC_END ,                                    S(KC_5)  , S(KC_8)  , S(KC_9)  , KC_QUOT  , KC_SCLN  , S(KC_INT3)  ,
-    _______, C(KC_PGUP), KC_F2   , KC_INT5  , KC_INT4  , C(KC_PGDN) ,       ,                     ,  S(KC_3)  , KC_RBRC  , KC_BSLS  ,          , S(KC_1)  ,S(KC_INT1),
-    _______,          , _______  ,          , _______  , _______  , _______  ,            _______  , _______  , _______  ,S(KC_RGUI), _______  ,          , _______
+    _______, C(KC_PGUP), KC_F2   , KC_INT5  , KC_INT4  , C(KC_PGDN) , KC_NO  ,              KC_NO  , S(KC_3)  , KC_RBRC  , KC_BSLS  , KC_NO    , S(KC_1)  ,S(KC_INT1),
+    _______, KC_NO    , _______  , KC_NO    , _______  , _______  , _______  ,            _______  , _______  , _______  ,S(KC_RGUI), _______  , KC_NO    , _______
   ),
 //mouse drag mode
   [2] = LAYOUT_universal(
-             ,          ,          ,          ,          ,          ,                                           ,          ,          ,          ,          ,          ,
-    _______  , _______  , _______  , _______  , _______  , _______  ,                                  CPI_I100 ,          , SCRL_DVD ,          , KC_PSCR  ,          ,
-    _______  , _______  , _______  , _______  , _______  , _______  ,                                  CPI_D100 , KC_BTN1  , MS_BTN3  , KC_BTN2  ,          , _______  ,
-    _______  , _______  , _______  , _______  , _______  , _______  ,          ,            S(KC_9)  , KBC_SAVE , _______  , SCRL_DVI , _______  , _______  , _______  ,
-    _______  , _______  , _______  ,          ,          , _______  , _______  ,        C(S(KC_TAB)) , C(KC_TAB), _______  , _______  , _______  , _______  , _______
+       KC_NO , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                   KC_NO   , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,
+    _______  , _______  , _______  , _______  , _______  , _______  ,                                  CPI_I100 , KC_NO    , SCRL_DVD , KC_NO    , KC_PSCR  , KC_NO    ,
+    _______  , _______  , _______  , _______  , _______  , _______  ,                                  CPI_D100 , KC_BTN1  , MS_BTN3  , KC_BTN2  , KC_NO    , _______  ,
+    _______  , _______  , _______  , _______  , _______  , _______  , KC_NO    ,            S(KC_9)  , KBC_SAVE , _______  , SCRL_DVI , _______  , _______  , _______  ,
+    _______  , _______  , _______  , KC_NO    , KC_NO    , _______  , _______  ,        C(S(KC_TAB)) , C(KC_TAB), _______  , _______  , _______  , _______  , _______
   ),
 //mouse scroll mode
   [3] = LAYOUT_universal(
-             ,          ,          ,          ,          ,          ,                                           ,          ,          ,          ,          ,          ,
+       KC_NO , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                   KC_NO   , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,
     _______  , KC_VOLU  , KC_F7    , KC_F8    , KC_F9    , KC_F10   ,                                C(S(KC_T)) , KC_BTN4  , KC_PGUP  , KC_BTN5  , KC_PSCR  , _______  ,
-    _______  , KC_VOLD  , KC_F4    , KC_F5    , KC_F6    , KC_F11   ,                                    KC_F5  , KC_BTN1  , KC_BTN3  , KC_BTN2  ,          ,          ,
-    _______  ,          , KC_F1    , KC_F2    , KC_F3    , KC_F12   ,          ,                     , A(KC_F4) , C(KC_W)  , KC_PGDN  , KC_INT5  , _______  , _______  ,
-    _______  , _______  , _______  ,          ,          , _______  , _______  ,        C(S(KC_TAB)) , C(KC_TAB), _______  , _______  , _______  , _______  ,          
+    _______  , KC_VOLD  , KC_F4    , KC_F5    , KC_F6    , KC_F11   ,                                    KC_F5  , KC_BTN1  , KC_BTN3  , KC_BTN2  , KC_NO    ,          ,
+    _______  , KC_NO    , KC_F1    , KC_F2    , KC_F3    , KC_F12   , KC_NO    ,             KC_NO   , A(KC_F4) , C(KC_W)  , KC_PGDN  , KC_INT5  , _______  , _______  ,
+    _______  , _______  , _______  , KC_NO    , KC_NO    , _______  , _______  ,        C(S(KC_TAB)) , C(KC_TAB), _______  , _______  , _______  , _______  , KC_NO    
   ),
 //Fn2
 /*
