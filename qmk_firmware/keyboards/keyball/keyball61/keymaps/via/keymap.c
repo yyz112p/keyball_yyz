@@ -54,6 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______  , _______  , _______  ,          ,          , _______  , _______  ,        C(S(KC_TAB)) , C(KC_TAB), _______  , _______  , _______  , _______  ,          
   ),
 //Fn2
+/*
   [4] = LAYOUT_universal(
              ,          ,          ,         ,         ,           ,                                           ,          ,          ,          ,           ,          ,
     _______  , KC_PSLS  , KC_7     , KC_8    , KC_9    , S(KC_MINS),                                   KC_PMNS , KC_7     , KC_8     , KC_9     , S(KC_MINS), _______  ,
@@ -61,6 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______  , KC_0     , KC_1     , KC_2    , KC_3    , KC_PPLS   ,          ,                      , KC_0    , KC_1     , KC_2     , KC_3     , KC_PAST   ,          ,
     _______  , _______  , KC_DOT   ,          ,          , _______  , _______  ,        C(S(KC_TAB)) , C(KC_TAB), _______  , _______  , _______  , _______  ,          
   ),
+*/
 };
 // clang-format on
 
