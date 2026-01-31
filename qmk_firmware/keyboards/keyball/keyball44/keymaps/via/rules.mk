@@ -5,4 +5,4 @@ OLED_ENABLE = yes
 VIA_ENABLE = yes
 
 //20260131 add
-EXTRAKEY_ENABLE = yes
+//EXTRAKEY_ENABLE = yes
