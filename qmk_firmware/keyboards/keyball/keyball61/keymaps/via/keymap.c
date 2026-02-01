@@ -71,7 +71,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
       case 3:
         keyball_set_scroll_mode(true);
         break;
-      case 4:
+      case 1:
         keyball_set_scroll_mode(true);
       default:
         keyball_set_scroll_mode(false);
