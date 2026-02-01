@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                  KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,
     KC_LALT  , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_MINS  ,
     KC_LSFT  , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                  KC_H     , KC_J     , KC_K     , KC_L     , MO(3)    , MO(2)    ,
-    MO(1)    , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_NO ,                  KC_NO , KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , MO(4)    ,
+    KC_LCTL  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_NO ,                  KC_NO , KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , MO(4)    ,
     _______  , KC_LCTL  , KC_LWIN  , MO(4)    , MO(1)    , KC_SPC   , KC_DEL,                 KC_BSPC, KC_ENT   ,LT(1,KC_LNG2),KC_RGUI, _______  , KC_INT1  , KC_NO    
   ),
 //Fn1
@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, KC_ESC   , S(KC_TAB), KC_UP    , KC_TAB   , KC_NO    ,                                  S(KC_4)  , S(KC_7)  , S(KC_2)  , S(KC_6)  , KC_LBRC  , KC_EQL   ,
     _______, KC_HOME  , KC_LEFT  , KC_DOWN  , KC_RGHT  , KC_END ,                                    S(KC_5)  , S(KC_8)  , S(KC_9)  , KC_QUOT  , KC_SCLN  , S(KC_INT3)  ,
     _______, C(KC_PGUP), KC_F2   , KC_INT5  , KC_INT4  , C(KC_PGDN) , KC_NO  ,              KC_NO  , S(KC_3)  , KC_RBRC  , KC_BSLS  , KC_NO    , S(KC_1)  ,S(KC_INT1),
-    _______, KC_NO    , _______  , KC_NO    , _______  , _______  , _______  ,            _______  , _______  , _______  ,S(KC_RGUI), _______  , KC_NO    , _______
+    _______, KC_NO    , _______  , KC_NO    , _______  , _______  , _______  ,        C(S(KC_TAB)) , C(KC_TAB), _______  ,S(KC_RGUI), _______  , KC_NO    , _______
   ),
 //mouse drag mode
   [2] = LAYOUT_universal(
@@ -74,6 +74,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         break;
       case 1:
         keyball_set_scroll_mode(true);
+        break;
       default:
         keyball_set_scroll_mode(false);
         break;
