@@ -227,6 +227,7 @@ __attribute__((weak)) void keyball_on_apply_motion_to_mouse_scroll(keyball_motio
             break;
         case KEYBALL_SCROLLSNAP_MODE_HORIZONTAL:
             r->v = 0;
+            r->h = - r->h; //20260203 reverse
             break;
         default:
             // pass by without doing anything
