@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                   KC_NO   , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,
     _______  , _______  , _______  , _______  , _______  , _______  ,                                  CPI_I100 , KC_NO    , SCRL_DVD , KC_NO    , KC_PSCR  , KC_NO    ,
     _______  , _______  , _______  , _______  , _______  , _______  ,                                  CPI_D100 , KC_BTN1  , KC_BTN3  , KC_BTN2  , KC_NO    , KC_NO    ,
-    _______  , _______  , _______  , _______  , _______  , _______  , KC_NO    ,              KC_NO  , KBC_SAVE , KC_NO  ;4  , SCRL_DVI , KC_NO    , KC_NO    , KC_NO    ,
+    _______  , _______  , _______  , _______  , _______  , _______  , KC_NO    ,              KC_NO  , KBC_SAVE , KC_NO    , SCRL_DVI , KC_NO    , KC_NO    , KC_NO    ,
     _______  , _______  , _______  , KC_NO    , KC_NO    , _______  , _______  ,        C(S(KC_TAB)) , C(KC_TAB), KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO
   ),
 //mouse scroll mode
