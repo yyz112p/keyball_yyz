@@ -52,8 +52,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 //Fn2
   [4] = LAYOUT_universal(
-    _______  , KC_F20   , KC_F21    , LGUI(KC_UP),KC_F22    , KC_F23                                     KC_PMNS , KC_7     , KC_8     , KC_9     , S(KC_MINS), _______  ,
-    _______  , KC_F18   , LGUI(KC_LEFT), LGUI(KC_DOWN), LGUI(KC_RGHT), KC_F19 ,                                   KC_PPLS , KC_4     , KC_5     , KC_6     , KC_PSLS   , KC_NO    ,
+    _______  , KC_F20   , KC_F21    , LGUI(KC_UP),KC_F22    , KC_F23 ,                                   KC_PMNS , KC_7     , KC_8     , KC_9     , S(KC_MINS), _______  ,
+    _______  , KC_F18   , LGUI(KC_LEFT), LGUI(KC_DOWN), LGUI(KC_RGHT), KC_F19 ,                          KC_PPLS , KC_4     , KC_5     , KC_6     , KC_PSLS   , KC_NO    ,
     _______  , KC_F13   , KC_F14    , KC_F15    , KC_F16    , KC_F17 ,                                   KC_0    , KC_1     , KC_2     , KC_3     , KC_PAST   , KC_NO    ,
                KC_NO    , KC_NO     , KC_NO     , _______   , _______,                             C(S(KC_TAB)) , C(KC_TAB), KC_NO    , KC_NO    , KC_DOT      
   ),
